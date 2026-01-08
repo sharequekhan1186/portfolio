@@ -4,19 +4,76 @@
     --border: #e5e7eb;
 }
 
-body {
-    margin: 10;
-    font-family: Inter, system-ui, sans-serif;
-    /* background: var(--bg); */
-    color: var(--text);
-}
-
 .nav {
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */
     padding: 20px;
     border-bottom: 1px solid var(--border);
 }
+
+/* General Reset for Nav */
+.nav {
+  width: 100%;
+  background-color: #1e1e2f; /* Dark background */
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container inside nav */
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+/* Nav Links */
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+  color: #ff6b6b; /* Highlight color */
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+  }
+  .nav-links {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links a {
+    margin: 8px 0;
+  }
+}
+
 
 .container {
     max-width: 720px;
