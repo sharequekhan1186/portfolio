@@ -5,9 +5,10 @@
 }
 
 body {
-    margin: 0;
+    margin: 10;
     font-family: Inter, system-ui, sans-serif;
-   
+    /* background: var(--bg); */
+    color: var(--text);
 }
 
 .nav {
