@@ -26,7 +26,7 @@ function App() {
           </a>
           <a
             className="btn"
-            href="https://github.com/sharequekhan1186"
+            href="https://github.com/sharequekhan1186/portfolio"
             target="_blank"
             rel="noopener noreferrer"
           >
