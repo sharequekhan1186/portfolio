@@ -1,253 +1,142 @@
-/* ====== MEDIA QUERIES (RESPONSIVE) ====== */
+:root {
+    --text: #111827;
+    --accent: #2563eb;
+    --border: #e5e7eb;
+}
 
-/* Tablet (768px और नीचे) */
+.nav {
+    /* display: flex;
+    justify-content: space-around; */
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+/* General Reset for Nav */
+.nav {
+  width: 100%;
+  background-color: #1e1e2f; /* Dark background */
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container inside nav */
+.nav-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+/* Nav Links */
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+  color: #ff6b6b; /* Highlight color */
+  transform: scale(1.05);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    /* Navigation */
-    .hamburger {
-        display: block;
-    }
-    
-    .nav-links {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 250px;
-        height: 100vh;
-        background: rgba(30, 30, 47, 0.98);
-        backdrop-filter: blur(20px);
-        flex-direction: column;
-        padding: 80px 30px;
-        gap: 25px;
-        transition: right 0.3s ease;
-        z-index: 1000;
-    }
-    
-    .nav-links.active {
-        right: 0;
-    }
-    
-    .nav-links a {
-        font-size: 1.1rem;
-        padding: 12px 20px;
-        border-radius: 8px;
-        width: 100%;
-        text-align: left;
-    }
-    
-    /* Header */
-    .header h1 {
-        font-size: 2.8rem;
-    }
-    
-    .subtitle {
-        font-size: 1.3rem;
-    }
-    
-    .description {
-        font-size: 1rem;
-        padding: 0 15px;
-    }
-    
-    /* Buttons */
-    .btn {
-        min-width: 140px;
-        padding: 10px 24px;
-    }
-    
-    .btn-group {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .btn-group .btn {
-        width: 100%;
-        max-width: 300px;
-    }
-    
-    /* Sections */
-    .section {
-        margin: 60px 0;
-    }
-    
-    .section h2 {
-        font-size: 2rem;
-    }
-    
-    /* Projects Grid */
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-    
-    /* Container */
-    .container {
-        padding: 0 15px;
-    }
-    
-    /* Cards */
-    .card {
-        padding: 25px;
-    }
-    
-    /* Social Links */
-    .social-links a {
-        width: 45px;
-        height: 45px;
-        font-size: 1.2rem;
-    }
+  .nav-container {
+    flex-direction: column;
+  }
+  .nav-links {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links a {
+    margin: 8px 0;
+    padding-top: 20px;
+  }
 }
 
-/* Mobile (480px और नीचे) */
+
+.container {
+    max-width: 720px;
+    margin: auto;
+    padding: 32px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.card {
+    border: 1px solid var(--border);
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+.btn-outline {
+    color: var(--text);
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 14px;
+}
+
+/* MEDIA QUERIES */
 @media (max-width: 480px) {
-    body {
-        padding-top: 60px;
-    }
-    
-    .nav {
-        padding: 12px 0;
-    }
-    
-    .nav-container {
-        padding: 0 15px;
-    }
-    
-    .logo {
-        font-size: 1.5rem;
-    }
-    
-    .header {
-        padding: 40px 0;
-    }
-    
-    .header h1 {
-        font-size: 2.3rem;
-    }
-    
-    .subtitle {
-        font-size: 1.1rem;
-    }
-    
-    .section h2 {
-        font-size: 1.8rem;
-        text-align: center;
-    }
-    
-    .section h2::after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
     .btn {
-        padding: 10px 20px;
-        font-size: 0.95rem;
-        min-width: 100%;
-    }
-    
-    .project-links {
-        flex-direction: column;
-    }
-    
-    .contact-item {
-        flex-direction: column;
+        display: block;
+        width: 100%;
         text-align: center;
-        gap: 10px;
-    }
-    
-    .contact-icon {
-        width: 50px;
-        height: 50px;
-        font-size: 1.5rem;
-    }
-    
-    .footer-links {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .back-to-top {
-        bottom: 20px;
-        right: 20px;
-        width: 45px;
-        height: 45px;
+        margin-bottom: 10px;
     }
 }
 
-/* Small Mobile (360px और नीचे) */
-@media (max-width: 360px) {
-    .header h1 {
-        font-size: 2rem;
-    }
-    
-    .container {
-        padding: 0 12px;
-    }
-    
-    .card {
-        padding: 20px;
-    }
-    
-    .skill-tag {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-    
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
+main {
+  padding-top: 90px; /* 70px = nav height */
 }
 
-/* Large Desktop (1200px और ऊपर) */
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1400px;
-    }
-    
-    .header h1 {
-        font-size: 4rem;
-    }
-    
-    .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    }
+
+/* Add this to your main content or body */
+body {
+  padding-top: 70px; /* adjust according to your nav height */
 }
 
-/* Landscape Mode for Mobile */
-@media (max-height: 500px) and (orientation: landscape) {
-    .nav-links {
-        padding: 60px 30px;
-        gap: 15px;
-        overflow-y: auto;
-    }
-    
-    .nav-links a {
-        padding: 8px 15px;
-        font-size: 1rem;
-    }
-    
-    .header {
-        padding: 30px 0;
-    }
-}
-
-/* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg-dark: #0a0f1c;
-        --bg-card: #151a2d;
-    }
-}
-
-/* Reduced Motion */
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-    
-    .nav-links {
-        transition: none;
-    }
-}
