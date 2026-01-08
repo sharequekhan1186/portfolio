@@ -394,3 +394,81 @@
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
 }
+
+
+/* ====== MODERN PROFESSIONAL DESIGN ====== */
+
+/* Professional Typography */
+.professional-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+
+.professional-subtitle {
+  font-size: 1.2rem;
+  color: #64748b;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+/* Card Design */
+.professional-card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s ease;
+}
+
+.professional-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Skill Tags Professional */
+.professional-skill {
+  background: #f1f5f9;
+  color: #334155;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid #cbd5e1;
+  transition: all 0.3s ease;
+}
+
+.professional-skill:hover {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+/* Contact Section Professional */
+.contact-professional {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 20px;
+  padding: 40px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Button Professional */
+.btn-professional {
+  background: #3b82f6;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-professional:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+}
