@@ -13,7 +13,7 @@
 
 /* General Reset for Nav */
 .nav {
-  width: 80%;
+  width: 100%;
   background-color: #1e1e2f; /* Dark background */
   padding: 10px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -130,7 +130,7 @@ section {
 }
 
 main {
-  padding-top: 70px; /* 70px = nav height */
+  padding-top: 90px; /* 70px = nav height */
 }
 
 
