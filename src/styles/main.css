@@ -128,3 +128,13 @@ section {
         margin-bottom: 10px;
     }
 }
+
+main {
+  padding-top: 70px; /* 70px = nav height */
+}
+
+
+/* Add this to your main content or body */
+body {
+  padding-top: 70px; /* adjust according to your nav height */
+}
